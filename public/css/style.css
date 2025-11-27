@@ -62,6 +62,48 @@ button{
     transition: background-color 0.3s ease;
 }
 
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+
+}
+.cards .card:hover{
+    background-color: #45a049;
+    color: white;
+}
+h1{
+    color: #007acc;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+}
+
+.card i {
+    font-size: 4rem;
+    color: #007acc;
+    margin-bottom: 1rem;
+}
+
+.card {
+background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+.card h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
 .pillars {
     display: flex;
     justify-content: center;
@@ -81,9 +123,18 @@ button{
     margin-bottom: 1rem;
     color: #333;
 }
+.pillar:hover{
+    background-color: #45a049;
+    color: white;
+}
 .pillar p {
     font-size: 1rem;
     color: #555;
+}
+.pillar i {
+    font-size: 4rem;
+    color: #007acc;
+    margin-bottom: 1rem;
 }
 
 .impact-stats {
@@ -132,4 +183,94 @@ button{
 .program p {
     font-size: 1rem;
     color: #555;
+
+}
+.get-involved {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.involvement-option {
+    background-color: #f0fff0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    text-align: center;
+}
+.involvement-option h2 {
+    margin-bottom: 1rem;
+}
+.involvement-option p {
+    font-size: 1rem;
+    color: #555;
+}
+.involvement-option button {
+    margin-top: 1rem;
+}
+.involvement-option button:hover {
+    background-color: #45a049;
+}
+
+/* we are handlinng the contact page styles here */
+/* Container */
+.contact-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #055c3b;
+}
+
+/* Contact info box */
+.contact-info {
+    background: #eaf8f2;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 20px 0;
+    text-align: center;
+    border-left: 4px solid #0b7a52;
+}
+
+/* Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit button */
+.btn-submit {
+    background: #0b7a52;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: #055c3b;
 }

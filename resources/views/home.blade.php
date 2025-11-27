@@ -6,6 +6,7 @@
     <title>Owesirahili Foundation</title>
     <meta name="description" content="Owesirahili Foundation is a non-profit organization dedicated to empowering communities through education, healthcare, and sustainable development initiatives.">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 @include('includes.header')
@@ -34,36 +35,18 @@
     {{-- our mission and vision section --}}
     <h1>Our Mission and Vision</h1>
         <div class="cards">
-            <style>
-            .cards {
-                display: flex;
-                justify-content: center;
-                gap: 2rem;
-                margin-top: 2rem;
-                flex-wrap: wrap;
-            }
-            .card {
-                background-color: #f9f9f9;
-                padding: 1.5rem;
-                border-radius: 8px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                max-width: 300px;
-                text-align: center;
-            }
-            .card h2 {
-                margin-bottom: 1rem;
-            }
-            .card p {
-                font-size: 1rem;
-                color: #555;
-            }
-            </style>
+            {{-- <style>
+            
+            </style> --}}
             <div class="card">
+                <i class="fa fa-cogs" aria-hidden="true"></i>
                 <h2>Our Mission</h2>
                 <p>To empower communities by providing access to quality education, healthcare, and sustainable development resources.</p>
             </div>
             <div class="card">
+                <i class="fa fa-eye-slash" aria-hidden="true"></i>
                 <h2>Our Vision</h2>
+                
                 <p>A world where every individual has the opportunity to thrive and contribute to their community's growth and well-being.</p>
             </div>
         </div>
@@ -74,18 +57,22 @@
     <p>These pillars represent the core areas of focus for our organization, guiding our efforts to create meaningful and sustainable impact in the communities we serve.</p>
     <div class="pillars">
         <div class="pillar">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
             <h2>Education</h2>
             <p>Providing access to quality education for children and adults.</p>
         </div>
         <div class="pillar">
+            <i class="fa fa-ambulance" aria-hidden="true"></i>
             <h2>Healthcare</h2>
             <p>Improving healthcare services and awareness in underserved communities.</p>
         </div>
         <div class="pillar">
+            <i class="fa fa-deviantart" aria-hidden="true"></i>
             <h2>Sustainable Development</h2>
             <p>Promoting environmentally friendly practices and sustainable livelihoods.</p>
         </div>
         <div class="pillar">
+            <i class="fa fa-users" aria-hidden="true"></i>
             <h2>Community Empowerment</h2>
             <p>Strengthening community capacities through training and resources.</p>
         </div>
@@ -130,8 +117,26 @@
                 <p>Installing clean water systems in rural communities.</p>
             </div>
         </div>     
+    </div>
 
-
+    {{-- get involved section --}}
+    <h1>Get Involved</h1>
+    <p>Join us in making a difference! There are many ways you can get involved with Owesirahili Foundation:</p>
+    <div class="get-involved">  
+        <div class="involvement-option">
+            <h2>Volunteer</h2>
+            <p>Share your time and skills to help us in our mission.</p>
+        </div>
+        <div class="involvement-option">
+            <h2>Donate</h2>
+            <p>Your contributions help us fund our programs and reach more communities.</p>
+        </div>
+        <div class="involvement-option">
+            <h2>Partner with Us</h2>
+            <p>Collaborate with us to amplify our impact through strategic partnerships.</p>
+        </div>
+    </div>
+  
 </body>
 @include('includes.footer')
 </html>

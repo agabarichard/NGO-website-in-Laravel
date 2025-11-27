@@ -33,9 +33,9 @@
         <img src="{{ asset('images/logo.png') }}" alt="logo" />
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/programs">Programs</a></li>
-            <li><a href="/contact">Contact</a></li>
+            {{-- <li><a href="/about">About Us</a></li> --}}
+            <li><a href="/pages/programs">Programs</a></li>
+            <li><a href="/pages/contact">Contact</a></li>
         </ul>   
     </nav>
     
