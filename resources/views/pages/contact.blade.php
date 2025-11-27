@@ -19,8 +19,22 @@
         <p><strong>Address:</strong> 123 Main Street, City, Country</p>
     </div>
     <h2>Contact Form</h2>
-    <form action="/send-message" method="POST"> 
+    <form action="{{ route('contact.submit') }}" method="POST"> 
         @csrf
+        @if(session('success'))
+            <div class="success-message">
+                {{ session('success') }}
+            </div>
+        @endif
+        @if($errors->any())
+            <div class="error-messages">
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required><br><br>
         <label for="email">Email:</label><br>
