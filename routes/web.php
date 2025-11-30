@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,13 +14,11 @@ use App\Http\Controllers\ContactController;
 */
 
 Route::get('/', function () {
-    return view('home');
-});
-Route::get('/pages/programs', function () {
-    return view('pages.programs');
+    return view('welcome');
 });
 
-Route::get('/pages/contact', function () {
-    return view('pages.contact');
-});
-Route::post('/pages/contact/submit', [ContactController::class, 'submit'])->name('contact.submit');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
